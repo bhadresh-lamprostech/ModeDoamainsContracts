@@ -11,8 +11,8 @@ const reverseRegistrarAddress = "0xF3087f9ad8718C28f4fe81C22b01cDfeca1FFbd5";
 const resolverAddress = "0xf675259f989f95e15d7923AccC6883D2e1fdd735";
 
 const contractAddress = "0xca3a57e014937c29526de98e4a8a334a7d04792b";
-const privateKey =
-  "0x128c6360f0192a385ea1ef6e75be2f136cbc5b4e1867463ae88cb3ab9fe3465e";
+const privateKey = process.env.PRIVATE_KEY;
+console.log(privateKey);
 
 async function resolveAddressToENSName(address) {
   try {

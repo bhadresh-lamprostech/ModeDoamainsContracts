@@ -13,8 +13,7 @@ const { toBigInt, toHex, hexToBytes, bytesToHex, sha3 } = web3Utils;
 // Replace these values with your actual contract and account details
 const contractAddress = "0xC5005a0027CcD013622940202693795973991dd4";
 const resolverAddress = "0xf675259f989f95e15d7923AccC6883D2e1fdd735";
-const privateKey =
-  "0x128c6360f0192a385ea1ef6e75be2f136cbc5b4e1867463ae88cb3ab9fe3465e";
+const privateKey = process.env.PRIVATE_KEY;
 const identifier =
   "24788734048738952657326481919470860950418461592552443182906243034561913";
 const providerUrl = "https://sepolia.mode.network/";
